@@ -1,0 +1,148 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.image:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.description {
+  text-align: center;
+}
+
+.description h1 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.description h1:hover {
+  color: #3498db;
+}
+
+.description p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  line-height: 1.5;
+}
+/* Container chính */
+.container {
+  display: grid;
+  grid-template-rows: auto auto auto; /* Chia làm 3 hàng: nút Back, ảnh, mô tả */
+  gap: 20px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 10px;
+  position: relative;
+}
+
+/* Nút Back */
+.btn-back {
+  justify-self: start; /* Căn nút Back sang trái */
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-back:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mô tả */
+.description {
+  text-align: center;
+  display: grid;
+  gap: 20px;
+}
+
+/* Nút Shopee */
+.btn-shopee {
+  justify-self: center; /* Căn giữa nút Shopee */
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(45deg, #f39c12, #e74c3c);
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-shopee:hover {
+  background: linear-gradient(45deg, #e74c3c, #f39c12);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+/* Toàn bộ trang cuộn */
+body {
+  height: 100vh; /* Chiều cao 100% màn hình */
+  overflow-y: auto; /* Bật cuộn dọc */
+}
+
+/* Đảm bảo container không bị bó hẹp */
+.container {
+  max-height: calc(100vh - 40px); /* Giảm chiều cao để tránh nút Back bị tràn */
+  overflow-y: auto; /* Cho phép cuộn trong container nếu nội dung dài */
+}
+.product-price {
+  font-size: 1.5rem;
+  color: #ff5722;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

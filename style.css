@@ -1,0 +1,314 @@
+body {
+  font-family: Helvetica;
+}
+a {
+  text-decoration: none;
+}
+
+h1.main-title {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+h3.title {
+  font-size: 1.2em;
+  margin-top: 10px;
+  max-width: 250px;
+}
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.genre {
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+p.sub-title {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  width: 250px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4f4f4f;
+  font-weight: lighter;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+  @media (max-width: 980px) {
+    width: 100%;
+  }
+}
+.news {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  @media (max-width: 980px) {
+    grid-template-rows: repeat(7, 200px);
+  }
+}
+.box {
+  background-color: grey;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  position: relative;
+  @media (max-width: 980px) {
+    background-size: 120%;
+  }
+}
+.read-btn {
+  background-color: white;
+  font-size: 12px;
+  padding: 8px 20px;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 15px;
+  transition: transform 0.2s ease-in-out;
+  &:hover {
+    transform: translateX(5px);
+  }
+}
+.box {
+  background-position: center;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.box1 {
+  grid-column: 1/3;
+  background-image: url(./1\ -\ Copy.jpg);
+  box-shadow: 3px 3px 20px 0px rgba(59, 168, 163, 0.25);
+  @media (max-width: 980px) {
+    grid-column: 1/6;
+    grid-row: 1 / 2;
+  }
+  &:hover {
+    box-shadow: 3px 3px 20px 0px rgba(59, 168, 163, 0.55);
+  }
+  .read-btn {
+    color: #7bb0ad;
+  }
+}
+.box2 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+  background-image: url(./img/2.jpg);
+  box-shadow: 3px 3px 20px 0px rgba(2, 48, 76, 0.25);
+  @media (max-width: 980px) {
+    grid-column: 1/6;
+    grid-row: 2 / 3;
+  }
+  &:hover {
+    box-shadow: 3px 3px 20px 0px rgba(2, 48, 76, 0.55);
+  }
+  .read-btn {
+    color: #152532;
+  }
+}
+.box3 {
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
+  background-image: url(./img/3.jpg);
+  box-shadow: 3px 3px 20px 0px rgba(73, 34, 2, 0.25);
+  @media (max-width: 980px) {
+    grid-column: 1/6;
+    grid-row: 3 / 4;
+  }
+  &:hover {
+    box-shadow: 3px 3px 20px 0px rgba(73, 34, 2, 0.55);
+  }
+  .read-btn {
+    color: #cd935b;
+  }
+}
+.box4 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  background-image: url(./img/4.jpg);
+  box-shadow: 3px 3px 20px 0px rgba(60, 162, 186, 0.25);
+  @media (max-width: 980px) {
+    grid-column: 1/6;
+    grid-row: 4 / 5;
+  }
+  &:hover {
+    box-shadow: 3px 3px 20px 0px rgba(60, 162, 186, 0.55);
+  }
+  .read-btn {
+    color: #43acc9;
+  }
+}
+
+.box5 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+  background-image: url(./img/5.jpg);
+  box-shadow: 3px 3px 20px 0px rgba(255, 131, 199, 0.25);
+  @media (max-width: 980px) {
+    grid-column: 1/6;
+    grid-row: 5 / 6;
+  }
+  &:hover {
+    box-shadow: 3px 3px 20px 0px rgba(255, 131, 199, 0.55);
+  }
+  .read-btn {
+    color: #fea0a5;
+  }
+}
+.box6 {
+  grid-column: 3 / 5;
+  grid-row: 3 / 4;
+  background-image: url(./img/6.jpg);
+  box-shadow: 3px 3px 20px 0px rgba(60, 162, 186, 0.25);
+  @media (max-width: 980px) {
+    grid-column: 1/6;
+    grid-row: 6 / 7;
+  }
+  &:hover {
+    box-shadow: 3px 3px 20px 0px rgba(60, 162, 186, 0.55);
+  }
+  .read-btn {
+    color: #63bdfe;
+  }
+}
+/* Footer Style */
+.footer {
+  background: #2e2100;
+  padding: 48px 20px; /* Giảm padding cho điện thoại */
+  display: grid;
+  gap: 20px; /* Khoảng cách giữa các hàng */
+}
+
+.footer .row {
+  display: grid; /* Sử dụng CSS Grid thay cho flex */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(120px, 1fr)
+  ); /* Tự động chia cột */
+  gap: 20px; /* Khoảng cách giữa các cột */
+  padding-bottom: 38px;
+  border-bottom: 1px solid #59554b;
+}
+
+.footer .column {
+  width: auto; /* Đảm bảo cột tự co giãn */
+}
+
+.footer .desc {
+  margin-top: 18px;
+  max-width: 100%; /* Đảm bảo đoạn văn không bị cắt */
+  color: #bfbcb2;
+  font-size: 1rem;
+  line-height: 1.86;
+}
+
+.footer .socials {
+  display: flex;
+  flex-wrap: wrap; /* Đảm bảo icon tự xuống dòng trên màn hình nhỏ */
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.footer .title {
+  padding-bottom: 14px;
+  padding-right: 0; /* Loại bỏ khoảng cách không cần thiết */
+  display: block; /* Chuyển thành dạng khối cho điện thoại */
+  border-bottom: 1px solid #59554b;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.footer .list {
+  margin-top: 28px;
+  display: grid;
+  gap: 10px; /* Khoảng cách giữa các liên kết */
+}
+
+.footer .list a {
+  display: block; /* Hiển thị từng liên kết theo hàng dọc */
+  color: #bfbcb2;
+  font-size: 1rem;
+  line-height: 0.3;
+}
+
+.footer .list strong {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.86;
+}
+
+.footer .copyright {
+  padding: 14px 0; /* Giảm padding cho điện thoại */
+  color: #807d74;
+  text-align: center;
+  font-size: 1rem; /* Giảm kích thước font cho gọn gàng */
+  line-height: 0.1;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .footer {
+    gap: 10px; /* Giảm khoảng cách giữa các thành phần */
+  }
+
+  .footer .row {
+    grid-template-columns: 1fr; /* Chuyển thành 1 cột trên điện thoại */
+    gap: 16px; /* Tăng khoảng cách giữa các hàng */
+  }
+
+  .footer .socials {
+    justify-content: center; /* Căn giữa icon trên điện thoại */
+  }
+
+  .footer .desc,
+  .footer .list a {
+    text-align: center; /* Căn giữa nội dung cho dễ đọc */
+  }
+}
+.btn-back {
+  justify-self: start; /* Căn nút Back sang trái */
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-back:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
